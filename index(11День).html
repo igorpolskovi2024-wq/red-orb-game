@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#0d202d">
+  <title>RED ORB — Mobile</title>
+  <link rel="stylesheet" href="style(11День).css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="RED ORB">🔴 <span>RED ORB</span></a>
+      <div class="hud">
+        <span>⭐ <b id="score">0</b></span>
+        <span>LEVEL <b id="level">1</b></span>
+      </div>
+      <button id="soundBtn" class="icon-btn" aria-label="Переключить звук">♫</button>
+    </header>
+
+    <section class="stage-wrap">
+      <canvas id="game" width="960" height="540" aria-label="Игровое поле RED ORB"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="panel">
+          <div class="orb-logo">●</div>
+          <p class="eyebrow">МОБИЛЬНОЕ ПРИКЛЮЧЕНИЕ</p>
+          <h1 id="overlayTitle">RED ORB</h1>
+          <p id="overlayText">Катайся, прыгай, собирай звёзды и доберись до финиша!</p>
+          <button id="startBtn" class="primary-btn">Начать игру <span>→</span></button>
+          <p class="help">Кнопки управления находятся под игровым полем</p>
+        </div>
+      </div>
+      <div id="toast" class="toast"></div>
+    </section>
+
+    <section class="mobile-console" aria-label="Управление">
+      <div class="control-hint">УПРАВЛЕНИЕ</div>
+      <div class="mobile-controls">
+        <div class="move-group">
+          <button id="leftBtn" class="control-btn" aria-label="Двигаться влево">←</button>
+          <button id="rightBtn" class="control-btn" aria-label="Двигаться вправо">→</button>
+        </div>
+        <button id="jumpBtn" class="control-btn jump" aria-label="Прыгнуть">
+          <span>↑</span><small>ПРЫЖОК</small>
+        </button>
+      </div>
+    </section>
+    <footer class="bottom"><span>⭐ СОБИРАЙ ЗВЁЗДЫ</span><span>⚠ ИЗБЕГАЙ ШИПОВ</span></footer>
+  </main>
+  <script src="script(11День).js"></script>
+</body>
+</html>
